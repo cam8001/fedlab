@@ -55,6 +55,7 @@ __Enter__ your chosen pool name and record as $CUP
 __Save__ your user pool.
 
 __Record__ your Pool Id and ARN as $CUPID and $CUPARN
+
 |Key| Sample
 |---|---
 |$CUPID |ap-southeast-2_0ShBpWf3u
@@ -111,9 +112,6 @@ __Record__ App client id as $CUPCID
 
 
 ***
-https://your_domain/login?response_type=code&client_id=your_app_client_id&redirect_uri=your_callback_url
-
-
 https://craigaroachicloud-bluecup.auth.ap-southeast-2.amazoncognito.com/login?response_type=code&client_id=2n6pup059ng2scg8n1crb1v5j6&redirect_uri=https://localhost
 
 ***
@@ -189,7 +187,7 @@ __Navigate__ to Cognito | $CUP | App Integration | App Client Settings
 __Navigate__ to $CUPCID
 
 |Field|Value|Sample
-|---|---
+|---|---|---
 |Enabled Identity Providers| AAD | -
 |Callback URL| $ALBURL + `/oauth2/idpresponse` | https://www2.craigroachnz.net/oauth2/idpresponse
 |OAuth2 - Allowed Flows| Authorization Code Grant | -

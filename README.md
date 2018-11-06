@@ -16,6 +16,9 @@ __Record__ your domain name as $AZD and the sub-domain component as $AZDSUB
 * Profile: arbitrary
 * Directory role: User
 ***
+__Record__ user name as $ALICEID
+`alice@craigaroachicloud.onmicrosoft.com`
+
 __Record__ user's generated password as $ALICEPWD
 
 __Note__ Password will changed on first login. Now `AUTOcoot+3`
@@ -193,3 +196,10 @@ __Navigate__ to $CUPCID
 |Callback URL| $ALBURL + `/oauth2/idpresponse` | https://www2.craigroachnz.net/oauth2/idpresponse
 |OAuth2 - Allowed Flows| Authorization Code Grant | -
 |OAuth2 - Allowed Scopes| email, openid | -
+
+
+## Create Elastic Beanstalk Application
+
+__Create__ sample application without ALB
+
+## Create ALB

@@ -21,7 +21,7 @@ __Record__ user name as $ALICEID
 
 __Record__ user's generated password as $ALICEPWD
 
-__Note__ Password will changed on first login. Now `AUTOcoot+3`
+__Note__ Password will changed on first login.
 
 ### Add Group
 * Group Type: Security

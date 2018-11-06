@@ -2,7 +2,7 @@
 ## Create Azure Free Account
 Follow manufacturer's instructions :)
 
-## Create a new directory
+## Find your directory
 
 * Click on 'Azure Active Directory'
 * A default directory will have been created for you.
@@ -42,11 +42,15 @@ __Add__ members
 * Alice Armstrong
 ***
 
+# In the AWS Console
+
 ## Create Cognito User Pool
-__Navigate__ to Cognito in Console, then Create Pool
+__Navigate__ to Cognito in Console, then Create User Pool
 
 __Enter__ your chosen pool name and record as $CUP
 `$CUP=BlueCup`
+
+Use 'step through settings'
 
 * Sign in: Username
 * Required attributes: email
@@ -89,7 +93,7 @@ __Record__ your fully qualified Cognito user pool domain name $CUPFQDN
 |---
 |https://craigaroachicloud-bluecup.auth.ap-southeast-2.amazoncognito.com
 
-__Construct__ your SAML endpoint using this domain name. After authenticating a user, AAD will respond with a HTTP Redirect to this endpoint using the SAML POST binding method. This method encodes the SAML Assertion as HTML FORM data, which the user's browser POSTs to the endpoint. To construct the endpoint URL, append `/saml2/idpresponse`. Record the endpoint URL as $CUPSAML
+__Construct__ your SAML endpoint using this domain name. After authenticating a user, Azure AD will respond with a HTTP Redirect to this endpoint using the SAML POST binding method. This method encodes the SAML Assertion as HTML FORM data, which the user's browser POSTs to the endpoint. To construct the endpoint URL, append `/saml2/idpresponse`. Record the endpoint URL as $CUPSAML
 > $CUPSAML = $CUPFQDN + `/saml2/idpresponse`
 
 |Sample $CUPSAML
@@ -105,6 +109,8 @@ __Construct__ your SAML Service Provider (SP) Entity ID - also known as the Audi
 
 
 __Navigate__ to Cognito | $CUP | General Settings | App Clients
+
+Add a new app client.
 
 |Field|Value
 |---|---
@@ -126,10 +132,13 @@ https://craigaroachicloud-bluecup.auth.ap-southeast-2.amazoncognito.com/login?re
 ***
 
 
-## Add Application to AAD
+## Add Application to Azure AD
 __Navigate__ to AAD | Default Directory | Manage | Enterprise Applications
 
 __Select__ New Application, then __Select__ Non-gallery application
+
+_Note_ you may need to start an "Enterprise Trial" for this.
+
 * Name: TeamCalendar
 ***
 __Add__

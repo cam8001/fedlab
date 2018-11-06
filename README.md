@@ -4,6 +4,7 @@ Follow manufacturer's instructions :)
 
 ## Populate Default Domain
 __Record__ your domain name as $AZD and the sub-domain component as $AZDSUB
+
 |Key|Sample
 |---|---
 |$AZD|`craigaroachicloud.onmicrosoft.com`

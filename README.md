@@ -2,7 +2,12 @@
 ## Create Azure Free Account
 Follow manufacturer's instructions :)
 
-## Populate Default Domain
+## Create a new directory
+
+* Click on 'Azure Active Directory'
+* A default directory will have been created for you.
+
+### Populate Default Domain
 __Record__ your domain name as $AZD and the sub-domain component as $AZDSUB
 
 |Key|Sample
